@@ -2,17 +2,17 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #0f172a; /* Derin gece mavisi/siyah */
+    background-color: #0f172a;
     color: #e2e8f0;
 }
 
-/* Panel Kartları */
+
 .panel-card {
     background-color: #1e293b;
     border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-/* Input ve Seçim Kutuları */
+
 .custom-input {
     background-color: #0f172a !important;
     border: 1px solid #334155 !important;
@@ -24,7 +24,7 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.15) !important;
 }
 
-/* Tablo Stilleri */
+
 .custom-table {
     color: #cbd5e1;
 }
@@ -47,7 +47,7 @@ body {
     padding: 1rem 0.5rem;
 }
 
-/* Etiketler (Badges) */
+
 .type-badge {
     padding: 0.4em 0.8em;
     border-radius: 6px;
@@ -64,7 +64,7 @@ body {
     border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
-/* Butonlar */
+
 .action-btn {
     width: 32px;
     height: 32px;
