@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0f172a; /* Derin gece mavisi/siyah */
+    color: #e2e8f0;
+}
+
+/* Panel Kartları */
+.panel-card {
+    background-color: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Input ve Seçim Kutuları */
+.custom-input {
+    background-color: #0f172a !important;
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+    transition: 0.3s;
+}
+.custom-input:focus {
+    border-color: #f59e0b !important;
+    box-shadow: 0 0 0 0.25rem rgba(245, 158, 11, 0.15) !important;
+}
+
+/* Tablo Stilleri */
+.custom-table {
+    color: #cbd5e1;
+}
+.custom-table thead th {
+    background-color: transparent;
+    color: #94a3b8;
+    border-bottom: 2px solid #334155;
+    font-weight: 600;
+}
+.custom-table tbody tr {
+    transition: 0.2s;
+}
+.custom-table tbody tr:hover td {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #fff;
+}
+.custom-table td {
+    background-color: transparent;
+    border-bottom: 1px solid #334155;
+    padding: 1rem 0.5rem;
+}
+
+/* Etiketler (Badges) */
+.type-badge {
+    padding: 0.4em 0.8em;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.type-Film { background: rgba(99, 102, 241, 0.15); color: #818cf8; }
+.type-Dizi { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.type-Belgesel { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+
+.premium-badge {
+    background: rgba(245, 158, 11, 0.1);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+/* Butonlar */
+.action-btn {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    transition: 0.2s;
+}
+.action-btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+.btn-edit:hover { background: #3b82f6; border-color: #3b82f6; }
+.btn-delete:hover { background: #ef4444; border-color: #ef4444; }
