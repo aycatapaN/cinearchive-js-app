@@ -1,10 +1,10 @@
-// Başlangıç Verileri (LocalStorage ile desteklenebilir ama şimdilik basit dizi)
+
 let mediaArchive = [
     { id: 1, name: "The Lord of the Rings", type: "Film", genre: "Aksiyon" },
     { id: 2, name: "Breaking Bad", type: "Dizi", genre: "Dram" }
 ];
 
-// 1. LİSTELEME İŞLEMİ
+
 function renderMedia() {
     const list = document.getElementById('mediaList');
     document.getElementById('totalCount').innerText = `${mediaArchive.length} Yapım`;
@@ -36,14 +36,14 @@ function renderMedia() {
     });
 }
 
-// İkon Seçici Fonksiyon (Görsellik için ekstra)
+
 function getIcon(type) {
     if(type === 'Film') return 'fa-film';
     if(type === 'Dizi') return 'fa-tv';
     return 'fa-video';
 }
 
-// 2. EKLEME İŞLEMİ
+
 function addMedia() {
     const nameInput = document.getElementById('mediaName');
     const typeInput = document.getElementById('mediaType');
@@ -56,14 +56,14 @@ function addMedia() {
             type: typeInput.value,
             genre: genreInput.value
         });
-        nameInput.value = ""; // Sadece ismi sıfırla, tür aynı kalabilir
+        nameInput.value = ""; 
         renderMedia(); 
     } else {
         alert("Lütfen bir yapım adı girin!");
     }
 }
 
-// 3. GÜNCELLEME İŞLEMİ
+
 function editMedia(id) {
     const media = mediaArchive.find(m => m.id === id);
     const newName = prompt("Yapım adını güncelle:", media.name);
@@ -74,7 +74,7 @@ function editMedia(id) {
     }
 }
 
-// 4. SİLME İŞLEMİ
+
 function deleteMedia(id) {
     if(confirm("Bu yapımı arşivden silmek istediğinize emin misiniz?")) {
         mediaArchive = mediaArchive.filter(m => m.id !== id);
